@@ -1,0 +1,170 @@
+// for 768px
+@media(max-width:768px) {
+    #header {
+        .container {
+            .header-content {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    #home-section-a {
+        .container {
+            .specialization {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .achievements {
+            div {
+                p {
+                    &:nth-child(even) {
+                        font-size: 1rem;
+                    }
+                    &:nth-child(odd) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    #home-section-b {
+        .container {
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    #about-section {
+        .container {
+            .content {
+                flex-direction: column;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #about-section-testimonials {
+        .container {
+            .comments {
+                flex-direction: column;
+            }
+        }
+    }
+    #section-work {
+        .container {
+            .image-gallery {
+                .gallery-item {
+                    .image-text {
+                        h4 {
+                            font-size: 0.5rem;
+                        }
+                        h2 {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// for 576px
+@media(max-width:576px) {
+    .header-other {
+        height: 10rem !important;
+    }
+    #header {
+        .container {
+            #navbar {
+                flex-direction: column;
+                ul {
+                    li {
+                        padding: 1rem 0.5rem;
+                    }
+                }
+            }
+            .header-content {
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    #home-section-a {
+        .container {
+            .specialization {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        .achievements {
+            flex-direction: column;
+        }
+    }
+    #home-section-b {
+        .container {
+            .skills {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+    #footer {
+        .container {
+            flex-direction: column;
+            p{
+                margin-bottom:2rem;
+            }
+        }
+    }
+    #about-section {
+        .container {
+            .awards {
+                flex-direction: column;
+            }
+        }
+        .technical-skills {
+            .description {
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    #about-section-logo {
+        display: none;
+    }
+    #section-work {
+        .container {
+            .image-gallery {
+                grid-template-columns: repeat(1, 1fr);
+                .gallery-item {
+                    .image-text {
+                        h4 {
+                            font-size: 1.5rem;
+                        }
+                        h2 {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #contact-section {
+        .container {
+            .user-data {
+                grid-template-columns: repeat(1, 1fr);
+                #message {
+                    grid-column: 1/span 1;
+                }
+                .btn {
+                    grid-column: 1/span 1;
+                }
+            }
+        }
+        .address {
+            flex-direction: column;
+        }
+    }
+}
